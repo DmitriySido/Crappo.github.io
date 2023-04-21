@@ -2023,7 +2023,7 @@ padding: 18px 18px 17px;
 		padding: 10px;
 		display: flex;
 		justify-content: center;
-		bottom: 5%;
+		bottom: 10%;
 		left: 10%;
 		right: 10%;
 	}
@@ -3217,6 +3217,22 @@ padding: 18px 18px 17px;
     font-size: 16px;
 	}
 
+	/*Infrastructure*/
+	.infrastructure{
+		position: relative;
+	}
+
+	.infrastructure:before {
+    filter: blur(3px);
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #39259c7d;
+    left: -21%;
+	}
+
 	.purchase__count {
     font-size: 14px;
 	}	
@@ -3241,12 +3257,31 @@ padding: 18px 18px 17px;
 	}
 
 	.sign-in {
-    bottom: 3%;
     left: 3%;
     right: 3%;
 	}
 
+	.header-navigation {
+		width: 75%;
+	}
+
 	/*Statistic*/
+		.statistic{
+		position: relative;
+	}
+
+	.statistic:before{
+		content: "";
+		position: absolute;
+		width: 500px;
+		height: 500px;
+		background-color: #96a5fc;
+		opacity: 0.03;
+		border-radius: 50%;
+		filter: blur(10px);
+		right: -80%;
+	}
+
 	.statistic__list{
 		display: block;
 	}
@@ -3425,5 +3460,182 @@ padding: 18px 18px 17px;
 	.payment-slider__list{
 		margin-left: 35px;
 	}
+}
 
+@media (max-width: 430px){
+	/*Section*/
+	.section__suptitle {
+		width: 100%;
+		font-size: 14px;
+	}
+
+	/*Invest*/
+	.invest__inner {
+    padding-top: 125px;
+	}
+
+	.invest__title {
+    width: 100%;
+	}
+
+	.invest__subject{
+		position: relative;
+    width: 140%;
+	}
+
+	.invest__pictures{
+		width: 80%;
+	}
+
+	.invest__button{
+		margin: 0px;
+	}
+
+	/*Invest Pictures*/
+	.invest__pictures{
+		left: 6%;
+	}
+
+	.invest-plank {
+    width: 50%;
+    top: -4%;
+    left: 40%;
+	}
+
+	.bitcoin-img {
+    left: 38%;
+    top: 33%;
+	}
+
+	.diagram-img {
+		top: 23%;
+	}
+
+	/*---*/
+	.line-2 {
+    top: 50%;
+	}
+
+	.top-block-2 {
+    bottom: 39%;
+	}
+
+	.under-block-2 {
+    bottom: 34%;
+	}
+	/*---*/
+
+	.line-3, .top-block-3, .under-block-3 {
+    left: 16%;
+    top: 51%;
+	}
+
+	.under-block-3 {
+    top: 57%;
+	}
+	/*---*/
+
+	.top-block-1 {
+    top: 1%;
+	}
+
+	/*Statistic*/
+	.statistic__data{
+		width: 100%;
+		margin-right: 0px;
+	}
+
+	/*Calculator*/
+	.mining__inner, .calculator {
+    width: 380px;
+	}
+
+	.calculator__text {
+		line-height: 1.3;
+	}
+
+	/*Securely*/
+	.securely__item{
+		width: 85%;
+	}
+
+	/*Choose*/
+	.choose__title {
+		width: 155%;
+	}
+
+	/*Infrastructure*/
+	.infrastructure {
+    padding-bottom: 40px;
+	}
+
+	/*Detailed*/
+	.purchase__button{
+		padding: 0 25px;
+	}
+
+	.data__item{
+		background-color: #2f1cc396;
+		padding: 5px;
+		border-radius: 10px;
+	}
+
+	.detailed__statistic-top {
+    padding-left: 25px;
+	}
+
+	.data__count {
+    font-size: 11px;
+	}
+
+	.statistic__trends:first-child:before{
+		top: 30%;
+	}
+
+	.statistic__trends:first-child:after{
+		top: 20px;
+	}
+
+	/*Profit*/
+	.profit__statistic{
+		padding: 0px;
+	}
+
+	.profit__cell {
+    font-size: 13px;
+	}
+
+	/*Footer*/
+	.footer__nav-adaptive{
+		display: block;
+		text-align: center;
+	}
+
+	.nav-adaptive__item{
+		margin: 0px 0px 10px 0;
+	}
+
+	.nav-adaptive__item:nth-child(1){
+		transform: translateX(80px);
+	}
+
+	.nav-adaptive__item:nth-child(2){
+		transform: translateX(-10px);
+	}
+
+	.nav-adaptive__item:nth-child(3){
+		transform: translateX(40px);
+	}
+
+	.nav-adaptive__item:nth-child(4){
+		transform: translateX(-40px);
+	}
+
+	.nav-adaptive__link{
+		font-size: 16px;
+	}
+
+	.footer__inner {
+    padding: 30px 20px;
+	}
 }
