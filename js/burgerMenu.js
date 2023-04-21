@@ -16,7 +16,7 @@ burgerButton.addEventListener('change', function(){
 })
 
 document.addEventListener('mousedown', function(e){
-  if(e.target.closest('.header') === null){
+  if(e.target.closest('.header') === null && e.target.closest('.register__form') === null){
   	toggleScroll()
     closeMenu()
     burgerButton.checked = false
