@@ -10,10 +10,34 @@
 	<script src="js/diagram.js" defer></script>
 	<script src="js/diagramSecond.js" defer></script>
 	<script src="js/burgerMenu.js" defer></script>
+	<script src="js/popup.js" defer></script>
 
 	<title>CRAPPO</title>
 </head>
 <body>
+
+	<div class="popup-register">
+    <div class="register__form container">
+     	<a class="singup">Register</a>
+        <div class="inputBox1">
+          <input type="text" required>
+          <span class="user">Email</span>
+        </div>
+
+        <div class="inputBox">
+          <input type="text" required>
+          <span>Username</span>
+        </div>
+
+        <div class="inputBox">
+          <input type="password" required>
+          <span>Password</span>
+        </div>
+
+      <button type="submit" class="learn-more__button enter">REGISTER</button>
+    </div>
+  </div>
+
 	<header class="header container">
 		<a class="header-logo logo" href="#">
 			<img class="logo-img" src="pictures/icons/logo.png" alt="Crappo logo">
@@ -46,9 +70,9 @@
 			</ul>
 
 			<div class="sign-in">
-				<button class="login-botton">Login</button>
+				<a href="#" class="login-button reg">Login</a>
 
-				<button class="header-button" type="button">
+				<a class="header-button reg">
 				  <strong>Register</strong>
 				  <div id="container-stars">
 				    <div id="stars"></div>
@@ -58,7 +82,7 @@
 				    <div class="circle"></div>
 				    <div class="circle"></div>
 				  </div>
-				</button>
+				</a>
 			</div>
 		</nav>
 	</header>
@@ -75,7 +99,7 @@
 					<h1 class="section__subject invest__subject">Fastest & secure platform to invest in crypto</h1>
 					<p class="section__suptitle invest__suptitle">Buy and sell cryptocurrencies, trusted by 10M wallets with over $30 billion in transactions.</p>
 
-					<div class="invest__button">
+					<div class="invest__button reg">
 					  <span class="tooltip">Sign in</span>
 					  <span>Try for free</span>
 					</div>
@@ -208,7 +232,7 @@
 							Digital currency in which a record of transactions is maintained.
 						</p>
 
-						<button class="securely__button">Start mining
+						<button class="securely__button reg">Start mining
 						  <div class="securely__button-icon">
 						    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg>
 						  </div>
@@ -223,7 +247,7 @@
 							Blockchain technology to create and run decentralized digital applications.
 						</p>
 
-						<button class="securely__button">Start mining
+						<button class="securely__button reg">Start mining
 						  <div class="securely__button-icon">
 						    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg>
 						  </div>
@@ -237,7 +261,7 @@
 							Cryptocurrency that enables instant payments to anyone in the world.
 						</p>
 
-						<button class="securely__button">Start mining
+						<button class="securely__button reg">Start mining
 						  <div class="securely__button-icon">
 						    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg>
 						  </div>
@@ -280,23 +304,23 @@
 				<div class="detailed__statistic">
 					<div class="detailed__statistic-top">
 						<ul class="statistic__data">
-							<li class="statistic__trends">
+							<li class="data__item statistic__trends">
 								<p class="data__count"><span>+7.3%</span>(+$146)</p>
 								<p class="data__text">Trends</p>
 							</li>
-							<li class="statistic__total">
+							<li class="data__item statistic__total">
 								<p class="data__count">$8256.00</p>
 								<p class="data__text">Total Amount</p>
 							</li>
-							<li class="statistic__hight">
+							<li class="data__item statistic__hight">
 								<p class="data__count">$51234.31</p>
 								<p class="data__text">Hight</p>
 							</li>
-							<li class="statistic__low">
+							<li class="data__item statistic__low">
 								<p class="data__count">$1531.30</p>
 								<p class="data__text">Low</p>
 							</li>
-						</ul>
+						</ul>	
 
 						<div class="detailed__user">
 							<img src="pictures/icons/mean-1.png" alt="User pictures">
@@ -322,7 +346,7 @@
 							</div>
 
 							<div class="purchase__button-wrapper">
-								<button class="purchase__button purchase__button-buy">
+								<button class="purchase__button purchase__button-buy reg">
 								  <span>Buy</span>
 								  <div class="button__container">
 								    <img class="purchase__button-icons" src="pictures/icons/currency/bitcoin.png" alt="Bitcoin icon">
@@ -331,7 +355,7 @@
 								  </div>
 								</button>
 
-								<button class="purchase__button purchase__button-cell">
+								<button class="purchase__button purchase__button-cell reg">
 								  <span>Cell</span>
 								  <div class="button__container">
 								    <img class="purchase__button-icons" src="pictures/icons/currency/bitcoin.png" alt="Bitcoin icon">
@@ -372,7 +396,7 @@
 							</th>
 							<th class="profit__cell">
 								Price
-							</h>
+							</th>
 							<th class="profit__cell">
 								Change
 							</th>
@@ -450,7 +474,7 @@
 				<form class="mining__forma" action="#">
 					<input class="forma-input" type="email" required placeholder="Enter your email">
 					<button class="forma__button" type="submit">
-						<span class="forma__button-text">Subscribe</span>
+						<span class="forma__button-text reg">Subscribe</span>
 						<span>Thanks!</span>
 					</button>
 				</form>
@@ -566,7 +590,7 @@
 		</div>
 
 		<div class="copyright container">
-			<p class="copyright__text" href="#">©2021 CRAPPO. All rights reserved</p>
+			<p class="copyright__text">©2021 CRAPPO. All rights reserved</p>
 
 			<ul class="copyright__list">
 				<li class="copyright__item">
