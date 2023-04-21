@@ -3466,7 +3466,11 @@ padding: 18px 18px 17px;
 	/*Section*/
 	.section__suptitle {
 		width: 100%;
-		font-size: 14px;
+		font-size: 13px;
+	}
+	
+	.section__subject {
+    font-size: 22px;
 	}
 
 	/*Invest*/
@@ -3545,13 +3549,22 @@ padding: 18px 18px 17px;
 		margin-right: 0px;
 	}
 
+	.statistic__item{
+		width: 67%;
+	}
+
 	/*Calculator*/
 	.mining__inner, .calculator {
-    width: 380px;
-	}
+    width: 350px;
+	}	
 
 	.calculator__text {
 		line-height: 1.3;
+	}
+
+	/*How Much*/
+	.how-much__inner{
+		margin-bottom: 20px;
 	}
 
 	/*Securely*/
@@ -3572,6 +3585,18 @@ padding: 18px 18px 17px;
 	/*Detailed*/
 	.purchase__button{
 		padding: 0 25px;
+	}
+
+	.detailed__purchase {
+		padding: 5px;
+	}
+
+	.purchase__count {
+    font-size: 13px;
+	}
+
+	.pushare__text {
+		font-size: 11px;
 	}
 
 	.data__item{
@@ -3603,6 +3628,15 @@ padding: 18px 18px 17px;
 
 	.profit__cell {
     font-size: 13px;
+	}
+
+	/*Mining*/
+	.forma-input {
+    width: 100%;
+	}
+
+	.mining__suptitle{
+		font-size: 12px;
 	}
 
 	/*Footer*/
